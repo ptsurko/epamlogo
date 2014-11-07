@@ -10,8 +10,8 @@ window.onload = function() {
   var colorIndex = 0;
 
   var logo = new Logo();
-  logo.message = "<EPAM>";
-  logo.fontStyle = "Arial";
+  logo.message = "<epam>";
+  logo.fontStyle = "Helvetica";
   logo.fontSize = 80;
 
   gui.add(logo, "message");
