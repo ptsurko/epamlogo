@@ -18,8 +18,14 @@ window.onload = function() {
   gui.add(logo, "fontStyle", ["Arial", "Helvetica", "sans-serif"])
   gui.add(logo, "fontSize", 80).min(0).max(200);
 
+  var polygonPoints = [
+    [[0,0], [width/2, height], [0, height], [0,0]],
+    [[0,0], [width/2, 0], [width, height], [width/2, height], [0,0]],
+    [[width/2, 0], [width, 0], [width, height], [width/2,0]]
+  ]
+
   for(var i = 0; i < rectCount; i++) {
-    var points = generatePolygonPoints(i, rectCount)
+    var points = polygonPoints[i];//generatePolygonPoints(i, rectCount)
     var canvas = $("<canvas>");
     canvas.attr("width", width);
     canvas.attr("height", height);
