@@ -1,0 +1,7 @@
+.demo {
+  position: relative;
+}
+
+.demo canvas {
+  position: absolute;
+}
